@@ -21,7 +21,6 @@ jobs:
         with:
           toolchain: nightly
           override: true
-          profile: minimal
       # We need `no-deps` here because `generic-array` we depend on has some obsolete attributes.
       # Can be removed when we update to `signature=3`
       - name: Build docs
@@ -37,7 +36,6 @@ jobs:
         with:
           toolchain: stable
           override: true
-          profile: minimal
           components: rust-analyzer
       - name: Cache Cargo registry and git
         id: cache-dependencies
@@ -67,7 +65,6 @@ jobs:
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: stable
-          components: clippy
           override: true
-          profile: minimal
+          components: clippy
       - run: cargo clippy --all --all-features --tests --benches -- -D warnings
