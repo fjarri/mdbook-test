@@ -38,6 +38,7 @@ jobs:
           toolchain: stable
           override: true
           profile: minimal
+          components: rust-analyzer
       - name: Cache Cargo registry and git
         id: cache-dependencies
         uses: actions/cache@v5
