@@ -1,0 +1,15 @@
+[package]
+name = "testcrate"
+version = "0.0.1"
+edition = "2024"
+license = "MIT"
+authors = ['Bogdan Opanchuk <bogdan@opanchuk.net>']
+readme = "../README.md"
+rust-version = "1.90"
+
+[dependencies]
+
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

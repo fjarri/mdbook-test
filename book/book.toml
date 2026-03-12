@@ -1,0 +1,8 @@
+[book]
+title = "Mdbook testing"
+authors = ["Bogdan Opanchuk"]
+language = "en"
+
+[preprocessor.rustdoc-links]
+after = ["links"]
+manifest-dir = "../testcrate"
