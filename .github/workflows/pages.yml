@@ -55,8 +55,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Move to a subfolder
-        run: mv book "book/dev"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
